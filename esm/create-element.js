@@ -23,7 +23,7 @@ function parse (query) {
   let className = '';
   let id = '';
 
-  for (let i = 1; i < chunks.length; i += 2) {
+  for (let i = 1; i < chunks.length; ++i) {
     switch (chunks[i]) {
       case '.':
         className += ` ${chunks[i + 1]}`;
